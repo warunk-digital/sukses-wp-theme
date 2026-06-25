@@ -1,3 +1,5 @@
+![Sukses screenshot](./screenshot.png)
+
 # Sukses — Modern WordPress Theme for Borneo Artisans
 
 A hybrid WordPress theme built for the Block Editor (FSE) and Elementor. Sukses combines elegant Material Design 3 aesthetics with accessibility-first principles and fluid, responsive layouts.
