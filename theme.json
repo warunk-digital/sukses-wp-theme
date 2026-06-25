@@ -4,12 +4,172 @@
 	"settings": {
 		"appearanceTools": true,
 		"layout": {
-			"contentSize": "960px",
-			"wideSize": "1200px"
+			"contentSize": "720px",
+			"wideSize": "1280px"
+		},
+		"useRootPaddingAwareAlignments": true,
+		"color": {
+			"defaultPalette": false,
+			"palette": [
+				{
+					"slug": "primary",
+					"color": "#061b0e",
+					"name": "Primary"
+				},
+				{
+					"slug": "primary-container",
+					"color": "#1b3022",
+					"name": "Primary Container"
+				},
+				{
+					"slug": "on-primary",
+					"color": "#ffffff",
+					"name": "On Primary"
+				},
+				{
+					"slug": "on-primary-container",
+					"color": "#819986",
+					"name": "On Primary Container"
+				},
+				{
+					"slug": "secondary",
+					"color": "#7d562d",
+					"name": "Secondary"
+				},
+				{
+					"slug": "secondary-container",
+					"color": "#ffca98",
+					"name": "Secondary Container"
+				},
+				{
+					"slug": "on-secondary",
+					"color": "#ffffff",
+					"name": "On Secondary"
+				},
+				{
+					"slug": "on-secondary-container",
+					"color": "#7a532a",
+					"name": "On Secondary Container"
+				},
+				{
+					"slug": "tertiary",
+					"color": "#171717",
+					"name": "Tertiary"
+				},
+				{
+					"slug": "tertiary-container",
+					"color": "#2b2b2b",
+					"name": "Tertiary Container"
+				},
+				{
+					"slug": "background",
+					"color": "#fbf9f6",
+					"name": "Background"
+				},
+				{
+					"slug": "surface",
+					"color": "#fbf9f6",
+					"name": "Surface"
+				},
+				{
+					"slug": "surface-container",
+					"color": "#efeeeb",
+					"name": "Surface Container"
+				},
+				{
+					"slug": "surface-container-high",
+					"color": "#e9e8e5",
+					"name": "Surface Container High"
+				},
+				{
+					"slug": "on-surface",
+					"color": "#1b1c1a",
+					"name": "On Surface"
+				},
+				{
+					"slug": "on-surface-variant",
+					"color": "#434843",
+					"name": "On Surface Variant"
+				},
+				{
+					"slug": "outline",
+					"color": "#737973",
+					"name": "Outline"
+				},
+				{
+					"slug": "outline-variant",
+					"color": "#c3c8c1",
+					"name": "Outline Variant"
+				},
+				{
+					"slug": "error",
+					"color": "#ba1a1a",
+					"name": "Error"
+				}
+			]
 		},
 		"typography": {
-			"fluid": true
-		},
-		"useRootPaddingAwareAlignments": true
+			"fluid": true,
+			"fontFamilies": [
+				{
+					"slug": "display",
+					"name": "Display",
+					"fontFamily": "\"EB Garamond\", serif"
+				},
+				{
+					"slug": "body",
+					"name": "Body",
+					"fontFamily": "\"Hanken Grotesk\", sans-serif"
+				}
+			],
+			"fontSizes": [
+				{
+					"slug": "display-lg",
+					"name": "Display Large",
+					"size": "clamp(2.5rem, 5vw, 4rem)",
+					"fluid": {
+						"min": "2.5rem",
+						"max": "4rem"
+					}
+				},
+				{
+					"slug": "headline-lg",
+					"name": "Headline Large",
+					"size": "clamp(1.75rem, 3.5vw, 3rem)",
+					"fluid": {
+						"min": "1.75rem",
+						"max": "3rem"
+					}
+				},
+				{
+					"slug": "headline-md",
+					"name": "Headline Medium",
+					"size": "clamp(1.25rem, 2.5vw, 2rem)",
+					"fluid": {
+						"min": "1.25rem",
+						"max": "2rem"
+					}
+				},
+				{
+					"slug": "body-lg",
+					"name": "Body Large",
+					"size": "clamp(1rem, 1.5vw, 1.125rem)",
+					"fluid": {
+						"min": "1rem",
+						"max": "1.125rem"
+					}
+				},
+				{
+					"slug": "body-md",
+					"name": "Body Medium",
+					"size": "1rem"
+				},
+				{
+					"slug": "label-caps",
+					"name": "Label Caps",
+					"size": "0.75rem"
+				}
+			]
+		}
 	}
 }

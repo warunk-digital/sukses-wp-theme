@@ -18,17 +18,28 @@ headers, footers, and single templates without fighting the block system.
 
 ```
 sukses/
-├── style.css          Theme header + base reset
-├── index.php          Main loop — calls the_content() for Elementor canvas
+├── style.css          Theme header (Tailwind handles all styling)
+├── index.php          Blog archive — post grid with pagination
+├── front-page.php     Landing page — hero, services, carousel, contact
+├── page.php           Standard page — the_content() for Elementor
+├── single.php         Single post — content + comments
 ├── header.php         DOCTYPE, wp_head(), body_class()
-├── footer.php         wp_footer() close
-├── functions.php      Theme setup, supports, menus, enqueue
-├── theme.json         Block editor presets (v3)
+├── footer.php         Footer + wp_footer() close
+├── functions.php      Theme setup, enqueues (Tailwind CDN, fonts, config)
+├── theme.json         Block editor presets (v3) — color palette, typography
 ├── AGENTS.md          This file
+├── DESIGN.md          Design guidelines
+├── .gitignore         Git ignore rules
+├── screenshot.png     Theme thumbnail (1200×900)
 ├── templates/         FSE block templates
-├── parts/             FSE template parts
-└── screenshot.png     Theme thumbnail (1200×900)
+└── parts/             FSE template parts
 ```
+
+## Design
+
+Read **[DESIGN.md](./DESIGN.md)** before writing any CSS or templates. It defines
+typography, color palette, spacing, layout, responsive rules, and accessibility
+standards. `theme.json` is the single source of truth for design tokens.
 
 ## Developing
 
@@ -36,6 +47,7 @@ sukses/
 - Add block patterns in `patterns/`
 - Add style variations in `styles/`
 - Keep `theme.json` as the single source of truth for design tokens
+- See DESIGN.md for visual guidelines agents must follow
 
 ## Guidelines
 
@@ -45,3 +57,4 @@ sukses/
 4. Keep `header.php` and `footer.php` lean — Elementor Theme Builder may
    override them entirely.
 5. Test every change with both the Block Editor and Elementor active.
+6. Read DESIGN.md before proposing any visual change.
